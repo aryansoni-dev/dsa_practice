@@ -12,15 +12,22 @@ public class Waiter {
         Stack<Integer> A = new Stack<Integer>();
         Stack<Integer> B = new Stack<Integer>();
         int[] primes = new int[q];
-
+        
         int count = 0;
-        int j = 2;
+        int n = 2;
         while (count < q) {
-            if (j % j == 0 && j % 1 == 0) {
-                primes[count] = j;
+            boolean isPrime = true;
+            for (int i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                primes[count] = n;
                 count++;
             }
-            j++;
+            n++;
         }
         // System.out.println("Primes : " + primes);
 
