@@ -9,11 +9,9 @@ public class LexicographicallySmallestSequence {
     public static void main(String[] args) {
         int n = 6, k = 3;
         int[] sequence = { 10, 20, 10, 30, 5, 40};
-
         Deque<Integer> deque = new LinkedList<>();
 
         for (int i = 0; i < n; i++) {
-
             while (!deque.isEmpty() && sequence[deque.peekLast()] > sequence[i] && deque.size() - 1 + (n - i) >= k) {
                 deque.pollLast();
             }
