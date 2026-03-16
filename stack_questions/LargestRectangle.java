@@ -1,4 +1,4 @@
-package dsa_practice;
+package dsa_practice.stack_questions;
 
 import java.util.Stack;
 import java.util.List;

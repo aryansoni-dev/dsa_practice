@@ -1,4 +1,4 @@
-package dsa_practice;
+package dsa_practice.DP_questions;
 
 // Question Link : https://www.hackerrank.com/contests/dsa003/challenges
 
